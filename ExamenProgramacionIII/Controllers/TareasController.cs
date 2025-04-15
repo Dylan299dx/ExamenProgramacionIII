@@ -65,7 +65,7 @@ namespace ExamenProgramacionIII.Controllers
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
-            catch
+            catch (Exception)
             {
 
                 throw;
